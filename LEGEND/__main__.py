@@ -56,16 +56,10 @@ Im an Anime themed + Super Group Management Bot, feel free to add me to your gro
 You can find my list of available commands with /help.
 """
 
-SOURCE_STRING = """
-⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/legendxop/LEGEND-ROBOT)
-⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/legendxop/LEGEND-ROBOT.git)
-"""
-
-
 HELP_STRINGS = """
 Hey there! My name is *{}*.
 
--> I am a pro group management bot, here to help you get around and keep the order in your groups!
+-> I am a Anime themed group management bot, here to help you get around and keep the order in your groups!
 -> I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
 {}
 Here is modules:
@@ -203,18 +197,18 @@ def start(update: Update, context: CallbackContext):
                      [
                         InlineKeyboardButton(
                             text=" ⚡ Join team x ",
-                            url="https://t.me/teamishere"),
+                            url="https://t.me/pikachusupport9"),
                          InlineKeyboardButton(
-                            text=" ❤️ Channel ",
-                             url="https://t.me/hackerget0")        
+                            text=" ❤️ Channel for anime in hindi sub",
+                             url="https://t.me/thecodexz7")        
                       ],
                       [ 
                         InlineKeyboardButton(
                              text=" ✨ Support ",
-                             url="https://t.me/Legend_userbot_support"),
+                             url="https://t.me/Pikachusupport9"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
-                             url="https://t.me/legendx22")
+                             url="https://t.me/Mr_godfather9")
                     
                     ]]))
     else:
