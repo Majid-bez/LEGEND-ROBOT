@@ -1,5 +1,5 @@
 {
-      "name": "LEGEND ROBOT",
+      "name": "ZEROTWOBOT",
       "description": "An Anime themed + Super Powerfull Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -8,8 +8,8 @@
          "manager",
          "Senku"
       ],   
-   "repository": "https://github.com/legendx22/LEGEND-ROBOT",
-   "logo": "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg",
+   "repository": "https://github.com/majid-bez/LEGEND-ROBOT",
+   "logo": "https://telegra.ph/file/zertwo-01-27",
    "addons": [
     {
          "options": {
@@ -52,11 +52,11 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1100231654"
+         "value": "1009276516"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "legendx22"
+         "value": "Mr_grandfather9"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
