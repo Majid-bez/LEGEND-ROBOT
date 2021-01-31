@@ -504,7 +504,7 @@ def site_search(update: Update, context: CallbackContext, site: str):
         search_result = soup.find_all("h2", {'class': "post-title"})
 
         if search_result:
-            result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>: \n"
+            result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>Codex7</code>: \n"
             for entry in search_result:
                 post_link = "https://animekaizoku.com/" + entry.a['href']
                 post_name = html.escape(entry.text)
