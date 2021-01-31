@@ -506,7 +506,7 @@ def site_search(update: Update, context: CallbackContext, site: str):
         if search_result:
             result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>Codex7</code>: \n"
             for entry in search_result:
-                post_link = "https://animekaizoku.com/" + entry.a['href']
+                post_link = " https://www.codexanime7.xyz/?" + entry.a['href']
                 post_name = html.escape(entry.text)
                 result += f"• <a href='{post_link}'>{post_name}</a>\n"
         else:
@@ -576,7 +576,7 @@ CHARACTER_HANDLER = DisableAbleCommandHandler("character", character)
 MANGA_HANDLER = DisableAbleCommandHandler("manga", manga)
 USER_HANDLER = DisableAbleCommandHandler("user", user)
 UPCOMING_HANDLER = DisableAbleCommandHandler("upcoming", upcoming)
-Codex7_SEARCH_HANDLER = DisableAbleCommandHandler("Codex7", Codex7)
+Codex7_SEARCH_HANDLER = DisableAbleCommandHandler("Codex7", codex7)
 KAYO_SEARCH_HANDLER = DisableAbleCommandHandler("kayo", kayo)
 BUTTON_HANDLER = CallbackQueryHandler(button, pattern='anime_.*')
 
