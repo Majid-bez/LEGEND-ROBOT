@@ -1,5 +1,5 @@
-#maked by LEGENDX22 OR LEGENDXOP
-#Made by TEAM LEGEND
+#maked by Mr_godfather9
+#Made by TEAM majid
 import os
 demon = os.environ.get("DEMONS")
 tigers = os.environ.get("TIGERS")
