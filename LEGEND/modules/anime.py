@@ -497,8 +497,8 @@ def site_search(update: Update, context: CallbackContext, site: str):
         message.reply_text("Give something to search")
         return
 
-    if site == "kaizoku":
-        search_url = f"https://animekaizoku.com/?s={search_query}"
+    if site == "Codex7":
+        search_url = f" https://www.codexanime7.xyz/?s={search_query}"
         html_text = requests.get(search_url).text
         soup = bs4.BeautifulSoup(html_text, "html.parser")
         search_result = soup.find_all("h2", {'class': "post-title"})
