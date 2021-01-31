@@ -1,12 +1,6 @@
-# LEGEND-ROBOT
- GRAND OFFICIAL VERSION 2.0 ONLY NAME CHANGED
+# Zerotwo
 
-You got any error contact me 👇
-[LEGEND X](https://t.me/legendx22)
-
-
-
-# FORK FULL SUPPORT BY LEGEND X
+# Made by majid
 
 Please read this 👇
 <details>
