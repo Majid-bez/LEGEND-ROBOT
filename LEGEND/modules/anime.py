@@ -12,7 +12,7 @@ from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
 info_btn = "More Information"
-Codex7_btn = "Codex7 ☠️"
+kaizoku_btn = "Kaizoku ☠️"
 kayo_btn = "Kayo 🏴‍☠️"
 prequel_btn = "⬅️ Prequel"
 sequel_btn = "Sequel ➡️"
@@ -407,13 +407,11 @@ def user(update: Update, context: CallbackContext):
 
     caption += textwrap.dedent(f"""
     *Username*: [{user['username']}]({user['url']})
-
     *Gender*: `{user['gender']}`
     *Birthday*: `{user_birthday_formatted}`
     *Joined*: `{user_joined_date_formatted}`
     *Days wasted watching anime*: `{user['anime_stats']['days_watched']}`
     *Days wasted reading manga*: `{user['manga_stats']['days_read']}`
-
     """)
 
     caption += f"*About*: {about_string}"
@@ -497,16 +495,16 @@ def site_search(update: Update, context: CallbackContext, site: str):
         message.reply_text("Give something to search")
         return
 
-    if site == "Codex7":
-        search_url = f" https://www.codexanime7.xyz/?s={search_query}"
+    if site == "kaizoku":
+        search_url = f"https://animekaizoku.com/?s={search_query}"
         html_text = requests.get(search_url).text
         soup = bs4.BeautifulSoup(html_text, "html.parser")
         search_result = soup.find_all("h2", {'class': "post-title"})
 
         if search_result:
-            result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>Codex7</code>: \n"
+            result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>: \n"
             for entry in search_result:
-                post_link = " https://www.codexanime7.xyz/?" + entry.a['href']
+                post_link = "https://animekaizoku.com/" + entry.a['href']
                 post_name = html.escape(entry.text)
                 result += f"• <a href='{post_link}'>{post_name}</a>\n"
         else:
@@ -556,18 +554,15 @@ def kayo(update: Update, context: CallbackContext):
 
 __help__ = """
 Get information about anime, manga or characters from [AniList](anilist.co).
-
 *Available commands:*
-
  • `/anime <anime>`*:* returns information about the anime.
  • `/character <character>`*:* returns information about the character.
  • `/manga <manga>`*:* returns information about the manga.
  • `/user <user>`*:* returns information about a MyAnimeList user.
  • `/upcoming`*:* returns a list of new anime in the upcoming seasons.
- • `/Codex7 <anime>`*:* search an anime on codexanime7.xyz/
+ • `/kaizoku <anime>`*:* search an anime on animekaizoku.com
  • `/kayo <anime>`*:* search an anime on animekayo.com
  • `/airing <anime>`*:* returns anime airing info.
-
  """
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime)
@@ -576,7 +571,7 @@ CHARACTER_HANDLER = DisableAbleCommandHandler("character", character)
 MANGA_HANDLER = DisableAbleCommandHandler("manga", manga)
 USER_HANDLER = DisableAbleCommandHandler("user", user)
 UPCOMING_HANDLER = DisableAbleCommandHandler("upcoming", upcoming)
-Codex7_SEARCH_HANDLER = DisableAbleCommandHandler("Codex7", codex7)
+KAIZOKU_SEARCH_HANDLER = DisableAbleCommandHandler("kaizoku", kaizoku)
 KAYO_SEARCH_HANDLER = DisableAbleCommandHandler("kayo", kayo)
 BUTTON_HANDLER = CallbackQueryHandler(button, pattern='anime_.*')
 
@@ -586,17 +581,17 @@ dispatcher.add_handler(CHARACTER_HANDLER)
 dispatcher.add_handler(MANGA_HANDLER)
 dispatcher.add_handler(AIRING_HANDLER)
 dispatcher.add_handler(USER_HANDLER)
-dispatcher.add_handler(Codex7_SEARCH_HANDLER)
+dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
 __mod_name__ = "🔸 Anime    "
 __command_list__ = [
-    "anime", "manga", "character", "user", "upcoming", "Codex7", "airing",
+    "anime", "manga", "character", "user", "upcoming", "kaizoku", "airing",
     "kayo"
 ]
 __handlers__ = [
     ANIME_HANDLER, CHARACTER_HANDLER, MANGA_HANDLER, USER_HANDLER,
-    UPCOMING_HANDLER, Codex7_SEARCH_HANDLER, KAYO_SEARCH_HANDLER,
+    UPCOMING_HANDLER, KAIZOKU_SEARCH_HANDLER, KAYO_SEARCH_HANDLER,
     BUTTON_HANDLER, AIRING_HANDLER
 ]
