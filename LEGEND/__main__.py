@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ✨Hey {}, I am ✨ {} ~.
-Im an Anime themed + Super Group Management Bot, feel free to add me to your groups!
+Im an Crown Anime themed + Super Group Management Bot, feel free to add me to your groups!
 You can find my list of available commands with /help.
 """
 
@@ -67,7 +67,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-LEGEND_IMG = "https://telegra.ph/zertwo-01-27"
+LEGEND_IMG = "https://telegra.ph/luff-02-05"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 LEGEND is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
