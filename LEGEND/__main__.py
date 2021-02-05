@@ -196,16 +196,16 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Join team x ",
-                            url="https://t.me/pikachusupport9"),
+                            text=" ⚡ Join Anime news ",
+                            url="https://t.me/Crown_Anime_News"),
                          InlineKeyboardButton(
                             text=" ❤️ Channel for anime in hindi sub",
-                             url="https://t.me/thecodexz7")        
+                             url="https://t.me/Crown_Anime")        
                       ],
                       [ 
                         InlineKeyboardButton(
-                             text=" ✨ Support ",
-                             url="https://t.me/Pikachusupport9"),
+                             text=" ✨ My Master ",
+                             url="https://t.me/omkarpatnaik"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
                              url="https://t.me/Mr_godfather9")
