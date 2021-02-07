@@ -67,7 +67,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-LEGEND_IMG = "https://telegra.ph/dgs-02-07"
+LEGEND_IMG = "https://telegra.ph/luff-02-07"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 LEGEND is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
