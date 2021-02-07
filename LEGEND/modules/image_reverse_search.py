@@ -187,7 +187,7 @@ __help__ = f"""
 Reports bugs at @teamishere.
 """
 
-__mod_name__ = "🔸 Img Search"
+__mod_name__ = "👑 Img Search"
 
 REVERSE_HANDLER = DisableAbleCommandHandler(
     "reverse", reverse, pass_args=True, admin_ok=True
