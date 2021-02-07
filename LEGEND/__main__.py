@@ -208,7 +208,7 @@ def start(update: Update, context: CallbackContext):
                              text="  Anime web ",
                              url="http://crownanime.com"),
                         InlineKeyboardButton(
-                             text=" Creator ",
+                             text=" Master ",
                              url="https://t.me/Mr_godfather9")
                     
                     ]]))
