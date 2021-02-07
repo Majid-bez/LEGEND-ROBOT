@@ -53,6 +53,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ✨Hey {}, I am ✨ {} ~.
 I'm an Anime themed ultra advanced Group Management Bot with a lot of special features.
+
 You can find my list of available commands with /help.
 """
 
@@ -190,24 +191,24 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text=" 👸 Add luffy to your group ",
+                            text="  Add luffy to your group ",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Anime news ",
+                            text=" Anime news ",
                             url="https://t.me/Crown_Anime_News"),
                          InlineKeyboardButton(
-                            text=" ❤️ Anime group",
+                            text="  Anime group",
                              url="https://t.me/Crown_Anime")        
                       ],
                       [ 
                         InlineKeyboardButton(
-                             text=" ✨ Anime web ",
+                             text="  Anime web ",
                              url="http://crownanime.com"),
                         InlineKeyboardButton(
-                             text=" 👨‍💻 Creator ",
+                             text=" Creator ",
                              url="https://t.me/Mr_godfather9")
                     
                     ]]))
