@@ -184,7 +184,6 @@ __help__ = f"""
 
 - `/reverse`*:* Does a *reverse image search* of the media which it was replied to.
 
-Reports bugs at @teamishere.
 """
 
 __mod_name__ = "👑 Img Search"
