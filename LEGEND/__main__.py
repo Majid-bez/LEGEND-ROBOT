@@ -190,22 +190,22 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text=" 👸 Invite me in your place ",
+                            text=" 👸 Add luffy to your group ",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Join Anime news ",
+                            text=" ⚡ Anime news ",
                             url="https://t.me/Crown_Anime_News"),
                          InlineKeyboardButton(
-                            text=" ❤️ Channel for anime in hindi sub",
+                            text=" ❤️ Anime group",
                              url="https://t.me/Crown_Anime")        
                       ],
                       [ 
                         InlineKeyboardButton(
-                             text=" ✨ My Master ",
-                             url="https://t.me/omkarpatnaik"),
+                             text=" ✨ Anime web ",
+                             url="http://crownanime.com"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
                              url="https://t.me/Mr_godfather9")
