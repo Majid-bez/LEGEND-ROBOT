@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ✨Hey {}, I am ✨ {} ~.
-Im an Crown Anime themed + Super Group Management Bot, feel free to add me to your groups!
+I'm an Anime themed ultra advanced Group Management Bot with a lot of special features.
 You can find my list of available commands with /help.
 """
 
